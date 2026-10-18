@@ -343,6 +343,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .contact-aside__details { display: grid; gap: 0.7rem; margin-top: 3rem; }
 .contact-aside__details a, .contact-aside__details span { color: rgba(11,12,14,0.75); font-size: 0.8rem; }
 .contact-form { padding: 2rem; background: var(--bg); border-radius: 1.4rem; }
+.contact-form__botcheck { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
 .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .form-grid label { display: grid; gap: 0.55rem; }
 .form-grid__full { grid-column: 1 / -1; }
@@ -350,11 +351,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .form-grid input, .form-grid select, .form-grid textarea { width: 100%; padding: 0.95rem 0; color: var(--white); background: transparent; border: 0; border-bottom: 1px solid var(--line-light); border-radius: 0; outline: 0; font-size: 0.9rem; transition: border-color 180ms ease; }
 .form-grid textarea { min-height: 8.5rem; resize: vertical; }
 .form-grid input:focus, .form-grid select:focus, .form-grid textarea:focus { border-color: var(--acid); }
+.form-grid .form-field--error input, .form-grid .form-field--error textarea { border-color: var(--orange); }
+.form-field__error { color: var(--orange); font-family: var(--mono); font-size: 0.62rem; line-height: 1.4; }
 .form-grid input::placeholder, .form-grid textarea::placeholder { color: var(--muted-dark); }
 .form-grid select { color: var(--white); }
 .form-grid option { color: var(--bg); background: var(--white); }
 .form-bottom { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-top: 2.5rem; }
 .form-bottom p { margin: 0; color: var(--muted); font-family: var(--mono); font-size: 0.62rem; }
+.form-bottom .button:disabled { cursor: wait; opacity: 0.65; transform: none; }
+.contact-form__status { display: flex; align-items: flex-start; gap: 0.65rem; margin-top: 1.4rem; padding: 0.85rem 0.95rem; color: var(--muted); border: 1px solid var(--line-light); border-radius: 0.7rem; font-size: 0.78rem; line-height: 1.55; }
+.contact-form__status--success { color: var(--acid); border-color: rgba(216,247,107,0.35); background: rgba(216,247,107,0.06); }
+.contact-form__status--error { color: #ffb29b; border-color: rgba(255,139,91,0.4); background: rgba(255,139,91,0.06); }
+.contact-form__status-icon { flex: 0 0 auto; margin-top: 0.05rem; }
 .form-success { display: flex; min-height: 25rem; flex-direction: column; align-items: flex-start; justify-content: center; padding: 2rem; background: var(--bg); border-radius: 1.4rem; }
 .form-success__icon { display: flex; width: 3.5rem; height: 3.5rem; align-items: center; justify-content: center; margin-bottom: 1.8rem; color: var(--bg); background: var(--acid); border-radius: 50%; }
 .form-success h2 { max-width: 32rem; margin: 0; color: var(--white); font-size: clamp(2rem, 4vw, 4rem); font-weight: 600; letter-spacing: -0.07em; line-height: 0.98; }
@@ -396,16 +404,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 
 .brand { display: inline-flex; align-items: center; gap: 0.7rem; width: fit-content; color: var(--white); }
-.brand__mark { display: grid; grid-template-columns: repeat(3, 0.38rem); align-items: flex-end; gap: 0.14rem; width: 1.5rem; height: 1.5rem; padding: 0.22rem; background: var(--acid); border-radius: 0.2rem; }
-.brand__mark span { display: block; background: var(--bg); border-radius: 0.12rem; }
-.brand__mark span:nth-child(1) { height: 58%; }
-.brand__mark span:nth-child(2) { height: 100%; }
-.brand__mark span:nth-child(3) { height: 78%; }
+.brand__image { display: block; width: 2.15rem; height: 2.15rem; object-fit: contain; filter: invert(1); }
 .brand__wordmark { font-size: 0.96rem; font-weight: 800; letter-spacing: -0.06em; }
 .brand__wordmark span { color: var(--acid); }
 
 .brand--inverse { color: var(--bg); }
-.brand--inverse .brand__mark span { background: var(--paper); }
+.brand--inverse .brand__image { filter: none; }
 
 .site-nav { display: flex; align-items: center; gap: 2.25rem; margin-left: auto; }
 .site-nav__link, .site-nav__mobile-cta { color: var(--muted); font-size: 0.75rem; font-weight: 600; transition: color 160ms ease; }

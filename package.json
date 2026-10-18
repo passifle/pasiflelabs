@@ -1,4 +1,3 @@
-
 {
   "name": "passiflelabs-site",
   "version": "0.1.0",
@@ -16,16 +15,18 @@
     "@types/node": "^22.14.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "@web3forms/react": "^1.1.3",
     "lucide-react": "^0.511.0",
     "next": "^15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.90.0",
     "three": "^0.176.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.12",
     "@types/three": "^0.176.0",
     "typescript": "^5.8.3",
-    "wrangler": "^4.151.1",
-    "@opennextjs/cloudflare": "^1.20.12"
+    "wrangler": "^4.151.1"
   }
 }

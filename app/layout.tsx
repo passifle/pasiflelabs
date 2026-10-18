@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     images: ["/og-image.svg"],
   },
   robots: { index: true, follow: true },
-  icons: { icon: "/icon.svg" },
+  icons: { icon: "/passifle-labs-logo-mark.png" },
 };
 
 export const viewport: Viewport = {

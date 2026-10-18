@@ -34,9 +34,15 @@ The site includes route metadata, canonical URLs, Open Graph/Twitter metadata,
 JSON-LD for the organization, services, website, FAQ, and contact pages, a
 sitemap, robots rules, and `public/llms.txt` for answer-engine context.
 
-The contact form is intentionally local-preview behavior until a real submission
-endpoint is configured. Replace the placeholder social/email details before
-launch.
+The contact form uses the official `@web3forms/react` integration. Copy
+`.env.example` to `.env.local`, add `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`, and
+restart the dev/build process. Configure the same build-time variable in the
+Cloudflare deployment environment. Without the key, the form shows a clear
+configuration message and does not claim that a message was delivered.
+
+The supplied Passifle Labs artwork is normalized into
+`public/passifle-labs-logo-mark.png` and is used in the header, footer, and site
+icon. Replace the placeholder social/email details before launch if needed.
 
 ## Checks
 
