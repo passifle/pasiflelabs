@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0c0e"/>
+  <circle cx="960" cy="110" r="260" fill="#1e1b37"/>
+  <circle cx="960" cy="110" r="190" fill="none" stroke="#b7a9ff" stroke-opacity=".35"/>
+  <circle cx="960" cy="110" r="130" fill="none" stroke="#8ee5dc" stroke-opacity=".35"/>
+  <rect x="72" y="74" width="44" height="44" rx="9" fill="#d8f76b"/>
+  <path d="M84 84h9v24h-9zm12 0h9v24h-9zm12 0h6v24h-6z" fill="#0b0c0e"/>
+  <text x="132" y="108" fill="#fbfaf7" font-family="Arial, sans-serif" font-size="28" font-weight="700">passifle<tspan fill="#d8f76b">labs</tspan></text>
+  <text x="72" y="280" fill="#fbfaf7" font-family="Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-5">MAKE THE</text>
+  <text x="72" y="370" fill="#d8f76b" font-family="Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-5">COMPLEX MOVE.</text>
+  <text x="76" y="458" fill="#9da0aa" font-family="Arial, sans-serif" font-size="22">Strategy · intelligent systems · experience</text>
+</svg>

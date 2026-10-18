@@ -1,0 +1,23 @@
+# Passifle Labs
+
+Passifle Labs is an independent strategy and systems consultancy based in Bengaluru and working globally.
+
+## What Passifle Labs does
+
+Passifle Labs helps ambitious companies clarify strategy, design useful AI-assisted systems, build coherent brands and experiences, and create digital products that are easier to choose and use.
+
+## Services
+
+- Strategy: positioning, offer architecture, market clarity, and strategic decision sprints.
+- Intelligent systems: AI opportunity mapping, workflow and agent design, knowledge systems, and responsible AI foundations.
+- Brand and experience: brand strategy, identity direction, experience principles, voice, and messaging.
+- Digital products: product direction, service and UX design, prototyping, validation, and launch experience.
+
+## How engagements begin
+
+Engagements start with a focused conversation or diagnostic. Clients do not need a perfect brief; a real business tension is enough.
+
+## Contact
+
+Website: https://passiflelabs.com/contact
+Email: hello@passiflelabs.com

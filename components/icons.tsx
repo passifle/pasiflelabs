@@ -1,0 +1,63 @@
+import type { LucideProps } from "lucide-react";
+import {
+  ArrowDownRight,
+  ArrowRight,
+  ArrowUpRight,
+  Asterisk,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  ChevronRight,
+  CircleDot,
+  ClipboardCheck,
+  ExternalLink,
+  Globe2,
+  Layers3,
+  Linkedin,
+  LockKeyhole,
+  Mail,
+  Menu,
+  Minus,
+  MoveUpRight,
+  PenLine,
+  Plus,
+  Quote,
+  Send,
+  ShieldCheck,
+  Sparkles,
+  X,
+} from "lucide-react";
+
+export const icons = {
+  ArrowDownRight,
+  ArrowRight,
+  ArrowUpRight,
+  Asterisk,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  ChevronRight,
+  CircleDot,
+  ClipboardCheck,
+  ExternalLink,
+  Globe2,
+  Layers3,
+  Linkedin,
+  LockKeyhole,
+  Mail,
+  Menu,
+  Minus,
+  MoveUpRight,
+  PenLine,
+  Plus,
+  Quote,
+  Send,
+  ShieldCheck,
+  Sparkles,
+  X,
+};
+
+export function Icon({ name, ...props }: { name: keyof typeof icons } & LucideProps) {
+  const Component = icons[name];
+  return <Component aria-hidden="true" {...props} />;
+}
