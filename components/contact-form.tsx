@@ -39,13 +39,17 @@ export function ContactForm() {
     },
   });
 
-  function onSubmit(fields: ContactFields) {
+  async function onSubmit(fields: ContactFields) {
     setResult(null);
     if (!accessKey) {
       setResult({ success: false, message: "The form is not configured yet. Please email hello@passiflelabs.com while the Web3Forms key is being added." });
       return;
     }
-    void submitToWeb3Forms(fields);
+    try {
+      await submitToWeb3Forms(fields);
+    } catch {
+      setResult({ success: false, message: "Could not send the message. Please check your connection or email hello@passiflelabs.com directly." });
+    }
   }
 
   return <form className="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
